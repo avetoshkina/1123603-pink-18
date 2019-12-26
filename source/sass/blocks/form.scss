@@ -24,15 +24,9 @@
 
 .form__btn {
   display: block;
-  width: 280px;
   min-height: 63px;
   margin-top: 52px;
   margin-bottom: 46px;
-  padding-top: 12px;
-  padding-bottom: 14px;
-  line-height: 30px;
-  background-color: $green;
-  border-radius: 5px;
 }
 
 @media (min-width: $tablet-width) {
