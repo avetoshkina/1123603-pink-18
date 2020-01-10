@@ -51,7 +51,16 @@
     box-shadow: none;
   }
 
+  .site-list__item--active a {
+    border-bottom: solid 2px $white;
+  }
+
   .site-list__item:first-of-type a {
     box-shadow: none;
+  }
+
+  .site-list__item a[href]:active {
+    color: $white;
+    opacity: 0.3;
   }
 }
