@@ -193,7 +193,8 @@
           <p class="photo-filter__heading">Затмите их всех!<br> Выкладывайте все, что накопилось в телефоне!</p>
         </div>
         <div class="photo-filter__background">
-          <div class="container photo-filter__wrapper">
+          <div class="container">
+            <form class="photo-filter__form" method="post">
             <picture>
               <source type="image/webp" media="(min-width: 960px)" srcset="img/photo-road-desktop@1x.webp 1x, img/photo-road-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 660px)" srcset="img/photo-road-tablet@1x.webp 1x, img/photo-road-tablet@2x.webp 2x">
@@ -233,10 +234,11 @@
                 </li>
               </ul>
               <div class="photo-filter__post-buttons">
-                <button class="photo-filter__btn photo-filter__btn--post button" type="button">Запостить</button>
-                <button class="photo-filter__btn photo-filter__btn--cancel button" type="button">Отмена</button>
+                <button class="photo-filter__btn photo-filter__btn--post button" type="submit">Запостить</button>
+                <button class="photo-filter__btn photo-filter__btn--cancel button" type="reset">Отмена</button>
               </div>
             </div>
+            </form>
           </div>
         </div>
       </section>
