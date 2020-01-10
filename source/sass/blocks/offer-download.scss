@@ -20,6 +20,15 @@
 
 .offer-download__download-btn {
   margin-bottom: 32px;
+
+  &:hover {
+    background-color: $white;
+    color: $pink;
+  }
+
+  &:active {
+    color: $light-pink;
+  }
 }
 
 .offer-download__image--tablet,
