@@ -96,17 +96,17 @@
 }
 
 @media (min-width: $desktop-width) {
-  .filter-icons {
-    width: 410px;
-    padding-right: 30px;
-  }
-
   .filter-icons__item {
-    margin-bottom: 30px;
+    width: 380px;
+    margin-bottom: 25px;
 
     &::after {
-      bottom: -13px;
+      bottom: -9px;
       width: 410px;
+    }
+
+    &--contrast::after {
+      bottom: -20px;
     }
   }
 
