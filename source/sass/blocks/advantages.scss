@@ -127,17 +127,17 @@
 
   .advantages__heading {
     width: 740px;
-    margin-bottom: 83px;
+    margin-bottom: 65px;
     font-size: 50px;
   }
 
   .advantages__wrapper {
-    width: 938px;
+    padding-top: 17px;
   }
 
   .advantages__list {
     width: 910px;
-    margin-top: 53px;
+    margin-top: 55px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -170,12 +170,12 @@
   .advantages__image--desktop {
     display: block;
     margin: 0;
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: 5px;
+    margin-right: 26px;
   }
 
   .advantages__image--desktop:nth-child(3n) {
-    margin-left: 0;
+    margin-left: 2px;
     margin-right: 0;
   }
 }

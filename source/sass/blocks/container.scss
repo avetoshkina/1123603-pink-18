@@ -45,6 +45,7 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px 645px;
     background-repeat: no-repeat;
+    background-position: 27px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");
