@@ -4,23 +4,39 @@
   justify-content: space-between;
   width: 240px;
   margin: auto;
-  margin-bottom: 73px;
+  margin-bottom: 114px;
 }
 
 .filter-icons__item {
   position: relative;
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -75px;
+    left: -40px;
+    width: 320px;
+    height: 1px;
+    background-color: $main-light;
+  }
+
+  &--fill::after,
+  &--contrast::after {
+    display: none;
+  }
 }
 
 .filter-icons__img {
-  fill: $pink;
+  fill: $main-color;
+  opacity: 0.3;
 
   &:hover {
-    fill: $main-color;
     opacity: 0.5;
   }
 
-  &:active {
-    opacity: 0.3;
+  &--active {
+    fill: $pink;
+    opacity: 1;
   }
 }
 
@@ -29,6 +45,7 @@
     flex-direction: column;
     width: 275px;
     margin: 0;
+    margin-bottom: 95px;
   }
 
   .filter-icons__item {
@@ -39,21 +56,42 @@
     &:last-child {
       margin: 0;
     }
+
+    &::after {
+      bottom: -25px;
+      left: 0;
+      width: 275px;
+    }
+
+    &--fill::after,
+    &--contrast::after {
+      display: block;
+    }
   }
 
-  .filter-icons__item--crop img {
-    width: 22px;
-    height: 22px;
-  }
+  .filter-icons__img {
+    fill: $pink;
+    opacity: 1;
 
-  .filter-icons__item--fill img {
-    width: 24px;
-    height: 22px;
-  }
+    &:hover {
+      fill: $main-color;
+      opacity: 0.5;
+    }
 
-  .filter-icons__item--contrast img {
-    width: 16px;
-    height: 16px;
+    &--crop {
+      width: 22px;
+      height: 22px;
+    }
+
+    &--fill {
+      width: 24px;
+      height: 22px;
+    }
+
+    &--contrast {
+      width: 16px;
+      height: 16px;
+    }
   }
 }
 
@@ -64,21 +102,29 @@
   }
 
   .filter-icons__item {
-    margin-bottom: 25px;
+    margin-bottom: 30px;
+
+    &::after {
+      bottom: -13px;
+      width: 410px;
+    }
   }
 
-  .filter-icons__item--crop img {
-    width: 44px;
-    height: 44px;
-  }
+  .filter-icons__img {
 
-  .filter-icons__item--fill img {
-    width: 48px;
-    height: 43px;
-  }
+    &--crop {
+      width: 44px;
+      height: 44px;
+    }
 
-  .filter-icons__item--contrast img {
-    width: 32px;
-    height: 32px;
+    &--fill {
+      width: 48px;
+      height: 43px;
+    }
+
+    &--contrast {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
