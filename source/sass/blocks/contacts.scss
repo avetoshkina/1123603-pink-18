@@ -75,6 +75,10 @@
   transform: translate(-50%, -50%);
 }
 
+.contacts__map iframe {
+  border: 0;
+}
+
 @media (min-width: $tablet-width) {
   .contacts__wrapper {
     flex-direction: row;
@@ -107,7 +111,7 @@
     }
   }
 
-  .contacts__map--iframe {
+  .contacts__map iframe {
     width: 700px;
     height: 404px;
   }
@@ -160,7 +164,7 @@
     }
   }
 
-  .contacts__map--iframe {
+  .contacts__map iframe {
     width: 1200px;
     height: 525px;
   }
