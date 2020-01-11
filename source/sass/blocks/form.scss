@@ -12,10 +12,13 @@
 
 .form__note {
   display: block;
-  width: 181px;
 
   @include font-regular;
   text-transform: uppercase;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .form__note sup {
@@ -61,5 +64,9 @@
 
   .form__btn {
     margin: 0;
+  }
+
+  .form__note--hidden {
+    display: inline;
   }
 }

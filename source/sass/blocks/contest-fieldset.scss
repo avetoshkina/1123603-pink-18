@@ -21,12 +21,14 @@
 
 .contest-fieldset__list {
   @include list-reset;
+  padding-left: 72px;
+
   @include font-regular;
   text-align: left;
 }
 
 .contest-fieldset__item {
-  margin-left: 72px;
+  // margin-left: 72px;
   margin-bottom: 63px;
   font-size: 18px;
 
@@ -111,6 +113,10 @@
     border: solid 2px $grey-border;
   }
 
+  .contest-fieldset__list {
+    padding-left: 120px;
+  }
+
   .contest-fieldset__title {
     padding-left: 32px;
     padding-right: 32px;
@@ -131,12 +137,58 @@
     padding: 0;
 
     &--travel-app {
-      padding-bottom: 27px;
+      padding-bottom: 67px;
     }
 
     &--textarea {
       padding-bottom: 45px;
     }
+  }
+
+  .contest-fieldset__list {
+    padding-left: 130px;
+    line-height: unset;
+  }
+
+  .contest-fieldset__title {
+    &--travel-app {
+      margin-bottom: 55px;
+    }
+
+    &--contacts {
+      margin-bottom: 33px;
+      padding-left: 34px;
+    }
+
+    &--achievements {
+      margin-bottom: 52px;
+    }
+
+    &--textarea {
+      margin-bottom: 34px;
+    }
+  }
+
+  .contest-fieldset__item--travel-app {
+    margin-bottom: 55px;
+  }
+
+  .contest-fieldset__radio + label::before {
+    top: -8px;
+    left: -60px;
+  }
+
+  .contest-fieldset__radio:checked + label::after {
+    top: 4px;
+    left: -47px;
+  }
+
+  .contest-form__input-label--contacts {
+    margin-top: 13px;
+  }
+
+  .contest-form__item--contacts {
+    margin-bottom: 14px;
   }
 
   .contest-fieldset__inner-container {
@@ -149,17 +201,28 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: space-between;
     height: 168px;
     padding-left: 118px;
+    padding-right: 55px;
   }
 
   .contest-fieldset__item--achievements {
-    width: 200px;
     margin-bottom: 63px;
     margin-left: 0;
 
     &:nth-child(2n) {
       margin-bottom: 0;
+    }
+
+    .contest-fieldset__checkbox + label::before {
+      top: -7px;
+      left: -59px;
+    }
+
+    .contest-fieldset__checkbox--checked-icon {
+      top: 3px;
+      left: -50px;
     }
   }
 }
