@@ -1,9 +1,8 @@
 .page-header {
-  position: absolute;
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: $main-light-heading;
+  background-color: $main-color;
 }
 
 .page-header__logo-wrap {

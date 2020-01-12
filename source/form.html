@@ -10,13 +10,13 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrap">
-          <a href="index.html" class="logo">
+          <a class="logo" href="index.html">
             <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22"><use xlink:href="sprite.svg#logo-mobile"></use></svg>
             <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40"><use xlink:href="sprite.svg#logo-tablet"></use></svg>
             <svg class="logo logo__logo-image logo__logo-image--desktop" width="147" height="40"><use xlink:href="sprite.svg#logo-desktop"></use></svg>
           </a>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--opened main-nav--no-js">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
@@ -70,32 +70,32 @@
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="selfie" name="selfie" checked>
                   <label for="selfie">Сделал селфи с акулой</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="sunburned" name="sunburned" checked>
                   <label for="sunburned">Обгорел на пляже</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="chuck-norris" name="chuck-norris">
                   <label for="chuck-norris">Видел Чака Норриса</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="souvenir" name="souvenir">
                   <label for="souvenir">Накупил сувениров</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="tower" name="tower" checked>
                   <label for="tower">Удержал башню</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="hotel" name="hotel" checked>
                   <label for="hotel">Разгромил отель</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
               </ul>
             </fieldset>
@@ -146,7 +146,7 @@
           <div class="contest-form__item contest-form__item--bottom">
             <button class="button button--green form__btn form__btn--submit" type="submit"><span class="button__text">Отправить форму</span></button>
             <small class="form__note">
-                <sup>*</sup> — обязательные <span class="form__note--hidden">для заполнения</span> поля
+                <sup>*</sup> — обязательные <span class="form__note form__note--hidden">для заполнения</span> поля
               </small>
           </div>
         </form>
@@ -156,7 +156,7 @@
 
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <a href="index.html" class="logo logo__footer">
+        <a class="logo logo__footer" href="index.html">
           <svg class="logo__footer-image logo__footer-image--mobile" width="147" height="40"><use xlink:href="sprite.svg#logo-mobilefooter"></use></svg>
           <svg class="logo__footer-image logo__footer-image--desktop" width="147" height="40"><use xlink:href="sprite.svg#logo-desktopfooter"></use></svg>
         </a>
