@@ -140,10 +140,11 @@
     display: block;
     width: 168px;
     background-color: $light-grey;
+    border: 0;
   }
 
   .price-list__option--mobile-hidden {
-    display: block;
+    display: table-cell;
   }
 
   .price-list__hidden-content {
