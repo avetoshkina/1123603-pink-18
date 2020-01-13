@@ -80,6 +80,7 @@
 
 @media (min-width: $desktop-width) {
   .comment {
+    flex-grow: 1;
     padding-top: 27px;
     padding-left: 28px;
   }

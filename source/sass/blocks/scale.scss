@@ -19,6 +19,7 @@
   border: solid 2px $pink;
   border-radius: 50%;
   background-color: $light-grey;
+  cursor: pointer;
 
   &:active {
     background-color: $pink;
