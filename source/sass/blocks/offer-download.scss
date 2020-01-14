@@ -63,23 +63,30 @@
   .offer-download__slogan {
     width: 186px;
     margin: 0;
-    margin-left: 58px;
-    margin-bottom: 39px;
+    margin-left: 74px;
+    margin-bottom: 36px;
+    padding-top: 18px;
     font-size: 40px;
   }
 
   .offer-download__wrapper {
     width: 300px;
     margin: 0;
+    padding-left: 20px;
+  }
+
+  .offer-download__description {
+    width: 300px;
+    font-size: 18px;
   }
 
   .offer-download__download-btn {
     width: 300px;
-    margin-bottom: 46px;
+    margin-bottom: 49px;
   }
 
   .offer-download__icon-list {
-    margin-bottom: 44px;
+    margin-bottom: 32px;
   }
 
   .offer-download__image--tablet {
@@ -103,11 +110,6 @@
 
   .offer-download__wrapper {
     padding-left: 11px;
-  }
-
-  .offer-download__description {
-    width: 300px;
-    font-size: 18px;
   }
 
   .offer-download__download-btn {

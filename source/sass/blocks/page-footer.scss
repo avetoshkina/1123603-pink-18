@@ -14,6 +14,8 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
+    padding-top: 36px;
+
     &--index {
       display: block;
     }
@@ -27,6 +29,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .page-footer {
+    padding-top: 66px;
+  }
+
   .page-footer__container {
     align-items: unset;
   }

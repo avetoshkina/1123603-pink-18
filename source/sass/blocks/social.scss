@@ -4,7 +4,7 @@
   justify-content: space-between;
   width: 173px;
   margin: auto;
-  margin-bottom: 50px;
+  margin-bottom: 45px;
 }
 
 .social__background {
@@ -69,6 +69,7 @@
 @media (min-width: $tablet-width) {
   .social__list {
     margin: 0;
+    padding-top: 6px;
   }
 }
 

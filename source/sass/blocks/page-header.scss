@@ -23,6 +23,7 @@
   .page-header__logo-wrap {
     width: $tablet-width;
     min-height: 109px;
+    padding-bottom: 19px;
   }
 }
 
@@ -44,6 +45,7 @@
   .page-header__logo-wrap {
     width: 147px;
     padding: 0;
+    padding-bottom: 16px;
     background-color: transparent;
     box-shadow: none;
   }

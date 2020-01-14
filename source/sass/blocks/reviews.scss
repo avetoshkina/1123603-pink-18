@@ -25,13 +25,21 @@
 }
 
 .reviews__text {
+  margin: 0;
+
   @include font-regular;
 }
 
 
 @media (min-width: $tablet-width) {
+  .reviews {
+    margin-bottom: 20px;
+    padding-top: 50px;
+  }
+
   .reviews__text {
-    margin-bottom: 44px;
+    margin: 0;
+    margin-bottom: 35px;
     font-size: 18px;
   }
 
@@ -49,8 +57,8 @@
 
 @media (min-width: $desktop-width) {
   .reviews {
-    margin-top: 200px;
-    margin-bottom: 105px;
+    margin-top: 135px;
+    margin-bottom: 40px;
   }
 
   .reviews__wrapper {
@@ -60,8 +68,8 @@
   .reviews__wrapper::before {
     content: "";
     position: absolute;
-    top: -116px;
-    left: 50%;
+    top: -114px;
+    left: 46%;
     width: 79px;
     height: 65px;
     background-image: url("../img/icon-quotes.svg");
@@ -77,6 +85,6 @@
   }
 
   .reviews__text {
-    margin-bottom: 35px;
+    margin-bottom: 36px;
   }
 }

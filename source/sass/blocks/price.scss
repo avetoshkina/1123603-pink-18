@@ -10,8 +10,15 @@
   background-position: 50% 0;
 }
 
+@media (min-width: $tablet-width) {
+  .price {
+    padding-bottom: 25px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .price {
-    margin-top: -40px;
+    padding-top: 149px;
+    padding-bottom: 55px;
   }
 }

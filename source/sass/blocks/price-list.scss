@@ -102,6 +102,8 @@
 
   .price-list__title {
     width: 25%;
+    padding-top: 11px;
+    padding-bottom: 6px;
     font-size: 16px;
 
     &::before {
@@ -123,22 +125,28 @@
 
   .price-list__option {
     padding-left: 15px;
-    padding-top: 16px;
-    padding-bottom: 14px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    text-transform: none;
   }
 
   .price-list__icon {
     background-position: center;
 
-    &--yes,
+    &--yes {
+      top: 25%;
+      left: 40%;
+    }
+
     &--no {
+      top: 15%;
       left: 40%;
     }
   }
 
   .price-list__title--hidden {
     display: block;
-    width: 168px;
+    width: 156px;
     background-color: $light-grey;
     border: 0;
   }
@@ -162,6 +170,8 @@
   }
 
   .price-list__title {
+    padding-top: 16px;
+    padding-bottom: 20px;
     font-size: 18px;
 
     &::before {
@@ -195,5 +205,17 @@
 
   .price-list__title--hidden {
     width: 236px;
+  }
+
+  .price-list__icon {
+    &--yes {
+      top: 35%;
+      left: 42%;
+    }
+
+    &--no {
+      top: 30%;
+      left: 43%;
+    }
   }
 }

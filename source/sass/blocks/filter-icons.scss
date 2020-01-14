@@ -2,9 +2,9 @@
   @include list-reset;
   display: flex;
   justify-content: space-between;
-  width: 240px;
+  width: 210px;
   margin: auto;
-  margin-bottom: 114px;
+  margin-bottom: 110px;
 }
 
 .filter-icons__item {
@@ -45,20 +45,20 @@
     flex-direction: column;
     width: 275px;
     margin: 0;
-    margin-bottom: 95px;
+    margin-bottom: 91px;
   }
 
   .filter-icons__item {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 52px;
+    margin-bottom: 48px;
 
     &:last-child {
       margin: 0;
     }
 
     &::after {
-      bottom: -25px;
+      bottom: -22px;
       left: 0;
       width: 275px;
     }

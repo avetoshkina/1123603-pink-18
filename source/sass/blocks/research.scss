@@ -1,7 +1,7 @@
 .research {
   position: relative;
   display: none;
-  padding-top: 102px;
+  padding-top: 98px;
   padding-bottom: 67px;
 }
 
@@ -12,6 +12,7 @@
 
 .research__title {
   margin: 0;
+  margin-bottom: 10px;
 
   @include font-bold;
   font-size: 30px;
@@ -22,11 +23,20 @@
 
 .research__description {
   width: 300px;
-  margin-right: 16px;
+  margin-right: 12px;
 
   @include font-regular;
   line-height: 24px;
   text-align: left;
+}
+
+.research__text {
+  margin: 0;
+  margin-bottom: 7px;
+}
+
+.research__desktop-wrap {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
@@ -43,7 +53,22 @@
   }
 
   .research__title {
+    margin-bottom: 23px;
     line-height: 30px;
+  }
+
+  .research__text {
+    width: 526px;
+    margin-bottom: 30px;
+  }
+
+  .research__title br,
+  .research__tablet-wrap {
+    display: none;
+  }
+
+  .research__desktop-wrap {
+    display: inline-block;
   }
 
   .research__description {
