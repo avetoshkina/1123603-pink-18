@@ -85,10 +85,10 @@
   .contest-form__item--phone::after {
     content: "";
     position: absolute;
-    top: 2px;
-    right: 2px;
-    width: 59px;
-    height: 59px;
+    top: 0;
+    right: 0;
+    width: 61px;
+    height: 61px;
     background-image: url("../img/icon-phone.svg");
     background-repeat: no-repeat;
     background-size: 20px 19px;
@@ -99,17 +99,17 @@
   .contest-form__item--email::after {
     content: "";
     position: absolute;
-    top: 2px;
-    right: 2px;
-    width: 59px;
-    height: 59px;
+    top: 0;
+    right: 0;
+    width: 61px;
+    height: 61px;
     background-image: url("../img/icon-mail.svg");
     background-repeat: no-repeat;
     background-size: 18px 13px;
     background-position: center;
     background-color: $grey-border;
   }
-
+}
 
   .contest-form__input-label {
     &--name {
