@@ -145,15 +145,14 @@
   }
 
   .contest-form__input-container {
-    margin-bottom: 20px;
-
     &--name {
       order: 1;
-      margin-bottom: 21px;
+      margin-bottom: 29px;
     }
 
     &--contacts {
       order: 3;
+      margin-bottom: 28px;
     }
 
     &--textarea {
@@ -177,12 +176,12 @@
   .contest-form__input-container {
     &--name {
       width: 435px;
-      margin-bottom: 55px;
+      margin-bottom: 63px;
     }
 
     &--contacts {
       width: 936px;
-      margin-bottom: 58px;
+      margin-bottom: 64px;
     }
 
     &--textarea {
