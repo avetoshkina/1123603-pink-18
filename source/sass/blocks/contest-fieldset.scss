@@ -5,7 +5,7 @@
 }
 
 .contest-fieldset__title {
-  margin-bottom: 40px;
+  margin-bottom: 43px;
   padding-left: 30px;
   padding-right: 30px;
 
@@ -17,23 +17,34 @@
   &--contacts {
     display: none;
   }
+
+  &--travel-app {
+    margin-bottom: 39px;
+  }
+
+  &--textarea {
+    margin-bottom: 16px;
+  }
 }
 
 .contest-fieldset__list {
   @include list-reset;
-  padding-left: 72px;
+  padding-left: 88px;
 
   @include font-regular;
   text-align: left;
 }
 
 .contest-fieldset__item {
-  // margin-left: 72px;
-  margin-bottom: 63px;
+  margin-bottom: 52px;
   font-size: 18px;
 
   &:last-child {
     margin-bottom: 0;
+  }
+
+  &--travel-app {
+    margin-bottom: 45px;
   }
 }
 
@@ -50,8 +61,8 @@
 .contest-fieldset__checkbox + label::before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: -50px;
+  top: -7px;
+  left: -69px;
   width: 39px;
   height: 39px;
   border: solid 2px $grey-border;
@@ -61,8 +72,8 @@
 .contest-fieldset__checkbox--checked-icon {
   display: none;
   position: absolute;
-  top: 10px;
-  left: -42px;
+  top: 7px;
+  left: -60px;
   fill: $pink;
 }
 
@@ -73,8 +84,8 @@
 .contest-fieldset__radio + label::before {
   content: "";
   position: absolute;
-  top: -5px;
-  left: -50px;
+  top: -7px;
+  left: -70px;
   width: 41px;
   height: 40px;
   border-radius: 50%;
@@ -85,8 +96,8 @@
 .contest-fieldset__radio:checked + label::after {
   content: "";
   position: absolute;
-  top: 7px;
-  left: -37px;
+  top: 5px;
+  left: -57px;
   width: 15px;
   height: 15px;
   border-radius: 50%;
@@ -109,26 +120,60 @@
 
 @media (min-width: $tablet-width) {
   .contest-fieldset {
-    padding-bottom: 50px;
+    padding-bottom: 59px;
     border: solid 2px $grey-border;
+
+    &--contacts {
+      padding-bottom: 26px;
+    }
+
+    &--achievements {
+      padding-bottom: 53px;
+    }
+
+    &--textarea {
+      padding-bottom: 47px;
+    }
   }
 
   .contest-fieldset__list {
-    padding-left: 120px;
+    padding-left: 116px;
   }
 
   .contest-fieldset__title {
+    margin-bottom: 48px;
     padding-left: 32px;
     padding-right: 32px;
 
     &--contacts {
       display: inline;
+      margin-bottom: 37px;
+    }
+
+    &--textarea {
+      margin-bottom: 37px;
     }
   }
 
   .contest-fieldset__inner-container {
     width: 496px;
     margin: auto;
+  }
+
+  .contest-fieldset__radio + label::before {
+    left: -60px;
+  }
+
+  .contest-fieldset__radio:checked + label::after {
+    left: -47px;
+  }
+
+  .contest-fieldset__checkbox + label::before {
+    left: -59px;
+  }
+
+  .contest-fieldset__checkbox--checked-icon {
+    left: -50px;
   }
 }
 
@@ -153,6 +198,8 @@
   .contest-fieldset__title {
     &--travel-app {
       margin-bottom: 55px;
+      padding-top: 3px;
+      padding-left: 25px;
     }
 
     &--contacts {
@@ -179,16 +226,8 @@
   }
 
   .contest-fieldset__radio:checked + label::after {
-    top: 4px;
-    left: -47px;
-  }
-
-  .contest-form__input-label--contacts {
-    margin-top: 13px;
-  }
-
-  .contest-form__item--contacts {
-    margin-bottom: 14px;
+    top: 5px;
+    left: -48px;
   }
 
   .contest-fieldset__inner-container {
@@ -221,8 +260,8 @@
     }
 
     .contest-fieldset__checkbox--checked-icon {
-      top: 20%;
-      left: -50px;
+      top: 10%;
+      left: -51px;
     }
   }
 }
