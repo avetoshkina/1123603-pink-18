@@ -5,7 +5,7 @@
 
 .container--index-bg {
   width: 320px;
-  height: 367px;
+  height: 372px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-size: 258px 286px;
   background-position: bottom left;
@@ -45,6 +45,7 @@
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-size: 1050px 645px;
     background-repeat: no-repeat;
+    background-position: 27px;
 
     @media (min-resolution: $retina-dppx) {
       background-image: url("../img/iphone-hand-desktop@2x.png");

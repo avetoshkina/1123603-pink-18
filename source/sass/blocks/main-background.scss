@@ -1,7 +1,7 @@
 .main-background {
   height: 462px;
-  // margin-bottom: 28px;
-  padding-top: 95px;
+  margin-top: -63px;
+  padding-top: 87px;
   padding-bottom: 300px;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-size: cover;
@@ -16,14 +16,15 @@
 
 .main-background--photo-page,
 .main-background--form-page {
-  height: 237px;
-  padding-top: 101px;
+  height: 234px;
+  padding-top: 95px;
   padding-bottom: 0;
 }
 
 @media (min-width: $tablet-width) {
   .main-background {
     height: 729px;
+    margin-top: -110px;
     padding-top: 184px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-size: 1200px 729px;
@@ -36,15 +37,17 @@
 
   .main-background--photo-page,
   .main-background--form-page {
-    height: 440px;
+    height: 438px;
+    padding-top: 181px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-background {
     height: 853px;
+    margin: 0;
     padding: 0;
-    padding-top: 218px;
+    padding-top: 207px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: 2560px 853px;
     background-repeat: no-repeat;
@@ -56,7 +59,7 @@
 
   .main-background--photo-page,
   .main-background--form-page {
-    height: 394px;
+    height: 393px;
     padding-top: 175px;
   }
 }

@@ -1,6 +1,9 @@
 .timer-icon {
-  width: 238px;
-  margin-top: -43px;
+  margin-top: -38px;
+}
+
+.timer-icon__layer1 {
+  position: relative;
 }
 
 .timer-icon__layer1 svg {
@@ -10,22 +13,43 @@
 }
 
 .timer-icon__layer2 {
+  position: absolute;
   width: 202px;
   height: 202px;
-  margin-top: -224px;
-  margin-left: 18px;
-  border: solid 25px $pink;
+  top: 57px;
+  left: 19px;
+  border: solid 15px $pink;
   border-radius: 50%;
-}
-
-.timer-icon__layer3 {
-  margin-top: 20px;
-}
-
-.timer-icon__layer3 p {
-  margin: 0;
 
   @include font-bold;
   font-size: 96px;
   color: $pink;
+}
+
+.timer-icon__layer2 p {
+  margin: 0;
+  margin-top: 26px;
+}
+
+@media (min-width: $desktop-width) {
+  .timer-icon {
+    margin-top: -95px;
+  }
+
+  .timer-icon__layer1 svg {
+    width: 298px;
+    height: 345px;
+  }
+
+  .timer-icon__layer2 {
+    top: 69px;
+    left: 23px;
+    width: 253px;
+    height: 253px;
+  }
+
+  .timer-icon__layer2 p {
+    margin-top: 36px;
+    font-size: 120px;
+  }
 }

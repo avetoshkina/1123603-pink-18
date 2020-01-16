@@ -8,8 +8,8 @@
 .page-main__description {
   width: 245px;
   margin: auto;
-  margin-top: 54px;
-  margin-bottom: 56px;
+  padding-top: 45px;
+  margin-bottom: 49px;
 
   @include font-regular;
 }
@@ -25,8 +25,8 @@
 
   .page-main__description {
     width: 438px;
-    margin-top: 100px;
-    margin-bottom: 80px;
+    padding-top: 92px;
+    margin-bottom: 76px;
     font-size: 18px;
   }
 }
@@ -34,7 +34,7 @@
 @media (min-width: $desktop-width) {
   .page-main__description {
     width: 580px;
-    margin-top: 92px;
+    padding-top: 92px;
     margin-bottom: 88px;
   }
 }

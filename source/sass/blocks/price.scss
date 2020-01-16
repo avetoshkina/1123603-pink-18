@@ -1,8 +1,8 @@
 .price {
   position: relative;
   overflow: hidden;
-  padding-top: 147px;
-  padding-bottom: 51px;
+  padding-top: 89px;
+  padding-bottom: 45px;
   background-color: $light-grey;
   background-image: url("../img/bg-triangle-white.svg");
   background-repeat: no-repeat;
@@ -10,8 +10,15 @@
   background-position: 50% 0;
 }
 
+@media (min-width: $tablet-width) {
+  .price {
+    padding-bottom: 25px;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .price {
-    margin-top: -40px;
+    padding-top: 149px;
+    padding-bottom: 55px;
   }
 }

@@ -1,5 +1,6 @@
 .slider__toggles {
-  margin-top: 42px;
+  margin: 0;
+  margin-top: 20px;
   text-align: center;
 }
 
@@ -7,7 +8,7 @@
   box-sizing: content-box;
   width: 6px;
   height: 6px;
-  margin-right: 19px;
+  margin-right: 13px;
   padding: 0;
   border: none;
   border-radius: 50%;
@@ -54,7 +55,7 @@
 
   .slider__btn--previous {
     position: absolute;
-    top: 20px;
+    top: 28px;
     left: 0;
     width: 22px;
     height: 41px;
@@ -69,7 +70,7 @@
 
   .slider__btn--next {
     position: absolute;
-    top: 20px;
+    top: 28px;
     right: 0;
     width: 22px;
     height: 41px;

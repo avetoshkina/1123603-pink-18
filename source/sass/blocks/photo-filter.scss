@@ -1,6 +1,6 @@
 .photo-filter__heading {
   margin: 0;
-  margin-bottom: 48px;
+  margin-bottom: 42px;
 
   @include font-regular;
 }
@@ -9,7 +9,7 @@
   background-color: $light-grey;
 }
 
-.photo-filter__wrapper {
+.photo-filter__form {
   display: flex;
   flex-direction: column;
   padding-top: 20px;
@@ -47,16 +47,38 @@
 
 .photo-filter__btn {
   width: 280px;
+  padding-bottom: 16px;
 
   &--post {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
     color: $pink;
     border-color: $pink;
+
+    &:hover {
+      background-color: $pink;
+      color: $white;
+    }
+
+    &:active {
+      color: $light-white;
+    }
   }
 
   &--cancel {
     color: $main-light;
     border-color: $main-light;
+
+    &:hover {
+      border-color: $main-color;
+      color: $main-color;
+      opacity: 0.3;
+    }
+
+    &:active {
+      background-color: $main-color;
+      color: $light-white;
+      opacity: 0.3;
+    }
   }
 
   &--edit {
@@ -70,11 +92,11 @@
 
 @media (min-width: $tablet-width) {
   .photo-filter__heading {
-    margin-bottom: 72px;
+    margin-bottom: 69px;
     font-size: 18px;
   }
 
-  .photo-filter__wrapper {
+  .photo-filter__form {
     flex-direction: row;
     justify-content: space-between;
     padding-top: 57px;
@@ -99,6 +121,18 @@
     padding-left: 48px;
   }
 
+  .photo-filter__btn {
+    width: 260px;
+
+    &--edit {
+      width: 22px;
+    }
+
+    &--post {
+      margin-bottom: 24px;
+    }
+  }
+
   .photo-filter__scale {
     margin-top: 0;
 
@@ -109,11 +143,15 @@
   }
 
   .photo-filter__post-buttons {
-    margin-top: auto;
+    margin-top: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .photo-filter {
+    margin-bottom: 32px;
+  }
+
   .photo-filter__heading {
     margin-bottom: 65px;
   }
@@ -123,7 +161,7 @@
     margin: 0 auto;
   }
 
-  .photo-filter__wrapper {
+  .photo-filter__form {
     padding-left: 80px;
     padding-top: 57px;
     padding-right: 60px;
@@ -137,8 +175,9 @@
 
   .photo-filter__post-buttons {
     display: flex;
-    width: 410px;
     justify-content: space-between;
+    width: 410px;
+    margin-top: auto;
   }
 
   .photo-filter__btn {

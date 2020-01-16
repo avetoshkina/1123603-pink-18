@@ -1,16 +1,22 @@
 .fieldset-wrapper {
   width: 320px;
   margin-left: -20px;
-  margin-bottom: 41px;
-  padding-top: 41px;
-  padding-bottom: 50px;
+  margin-bottom: 32px;
+  padding-top: 37px;
+  padding-bottom: 47px;
   background-color: $light-grey;
+
+  &--travel-app {
+    margin-bottom: 38px;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .fieldset-wrapper {
     width: 620px;
     margin: 0;
+    margin-bottom: 65px;
+    padding-bottom: 0;
     background-color: $white;
 
     &--achievements {
@@ -35,7 +41,7 @@
 
     &--achievements {
       width: 936px;
-      margin-bottom: 69px;
+      margin-bottom: 63px;
     }
   }
 }

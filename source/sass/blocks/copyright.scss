@@ -2,12 +2,13 @@
   position: relative;
   min-width: 148px;
   margin: auto;
+  padding-left: 9px;
 }
 
 .copyright__logo {
   position: absolute;
-  top: -10px;
-  right: 0;
+  top: -6px;
+  right: 10px;
   fill: $pink;
 
   &:hover {
@@ -27,20 +28,32 @@
 @media (min-width: $tablet-width) {
   .copyright {
     margin: 0;
+    padding-top: 5px;
+  }
+
+  .copyright__logo {
+    top: 0;
+    right: 2px;
+  }
+
+  .copyright__text {
+    padding-left: 9px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .copyright {
-    margin-top: 20px;
+    width: 155px;
+    margin-top: 22px;
+    padding: 0;
   }
 
   .copyright__text {
+    padding: 0;
     font-size: 18px;
   }
 
   .copyright__logo {
-    top: -6px;
-    right: -16px;
+    top: -5px;
   }
 }

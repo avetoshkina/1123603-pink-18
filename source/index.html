@@ -10,13 +10,13 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrap">
-          <a class="logo">
-            <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-mobile"></use></svg>
-            <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-tablet"></use></svg>
-            <svg class="logo logo__logo-image logo__logo-image--desktop" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-desktop"></use></svg>
+          <a class="logo" href="#">
+            <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22"><use xlink:href="sprite.svg#logo-mobile"></use></svg>
+            <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40"><use xlink:href="sprite.svg#logo-tablet"></use></svg>
+            <svg class="logo logo__logo-image logo__logo-image--desktop" width="147" height="40"><use xlink:href="sprite.svg#logo-desktop"></use></svg>
           </a>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--opened main-nav--no-js">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -44,21 +44,21 @@
             <h2 class="visually-hidden">Скачайте приложение Pink</h2>
             <p class=" page-main__heading offer-download__slogan">Взгляните на жизнь иначе!</p>
             <div class="offer-download__wrapper">
-              <a class="offer-download__download-btn button" href="#">Скачать приложение</a>
+              <a class="offer-download__download-btn button" href="https://www.apple.com/ios/app-store/" target="blank">Скачать приложение</a>
               <ul class="offer-download__icon-list">
                 <li>
                   <a href="https://www.apple.com/ios/app-store/" target="blank">
-                    <img class="offer-download__icon offer-download__icon--apple" src="img/logo-apple.svg" width="47" height="56"><span class="visually-hidden">Скачать в App Store</span></img>
+                    <img class="offer-download__icon offer-download__icon--apple" src="img/logo-apple.svg" width="47" height="56" alt="Скачать в App Store">
                   </a>
                 </li>
                 <li>
                   <a href="https://play.google.com/store" target="blank">
-                    <img class="offer-download__icon offer-download__icon--android" src="img/logo-android.svg" width="43" height="47"><span class="visually-hidden">Скачать в Google Play</span></img>
+                    <img class="offer-download__icon offer-download__icon--android" src="img/logo-android.svg" width="43" height="47" alt="Скачать в Google Play">
                   </a>
                 </li>
                 <li>
                   <a href="https://www.microsoft.com/ru-ru/store/apps/windows" target="blank">
-                    <img class="offer-download__icon offer-download__icon--windows" src="img/logo-microsoft.svg" width="44" height="41"><span class="visually-hidden">Скачать в Windows App Store</span></img>
+                    <img class="offer-download__icon offer-download__icon--windows" src="img/logo-microsoft.svg" width="44" height="41" alt="Скачать в Windows App Store">
                   </a>
                 </li>
               </ul>
@@ -103,16 +103,14 @@
               <div class="timer-icon__layer1">
                 <svg width="298" height="345"><use xlink:href="sprite.svg#timer"></use></svg>
                 <div class="timer-icon__layer2">
-                  <div class="timer-icon__layer3">
-                    <p>24</p>
-                  </div>
+                  <p>24</p>
                 </div>
               </div>
             </div>
             <div class="research__description">
-              <p class="research__title">Эффект на 24 часа!</p>
-              <p class="research__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
-              <a class="research__link link" href="">Узнать больше об исследовании</a>
+              <p class="research__title">Эффект<br> на 24 часа!</p>
+              <p class="research__text">Британские ученые провели исследования и доказали,<br class="research__desktop-wrap"> что положительный эффект<br class="research__tablet-wrap"> от использования приложения длится целые сутки!</p>
+              <a class="research__link link" href="#">Узнать больше об исследовании</a>
             </div>
           </div>
         </div>
@@ -125,17 +123,17 @@
                 <li class="user-review__item user-review__item--active slider__item">
                   <cite class="reviews__author-name">Николай Петров</cite>
                   <small class="reviews__author-info">25 лет, водитель трамвая</small>
-                  <bloquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</bloquote>
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </li>
                 <li class="user-review__item slider__item">
                   <cite class="reviews__author-name">Николай Петров</cite>
                   <small class="reviews__author-info">25 лет, водитель трамвая</small>
-                  <bloquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</bloquote>
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </li>
                 <li class="user-review__item slider__item">
                   <cite class="reviews__author-name">Николай Петров</cite>
                   <small class="reviews__author-info">25 лет, водитель трамвая</small>
-                  <bloquote class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</bloquote>
+                  <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
                 </li>
               </ul>
             <p class="reviews__toggles slider__toggles">
@@ -163,45 +161,45 @@
                   <td class="price-list__option price-list__option--mobile-hidden">Розовый фильтр</td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Розовый фильтр</span>
-                    <svg class="price-list__option--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Розовый фильтр</span>
-                    <svg class="price-list__option--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Розовый фильтр</span>
-                    <svg class="price-list__option--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                   </td>
                 </tr>
                 <tr>
                   <td class="price-list__option price-list__option--mobile-hidden">Смайлики</td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Смайлики</span>
-                    <svg class="price-list__option--no" width="27" height="26"><use xlink:href="sprite.svg#icon-no"></use></svg>
+                    <svg class="price-list__icon price-list__icon--no" width="27" height="26"><use xlink:href="sprite.svg#icon-no"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Смайлики</span>
-                    <svg class="price-list__option--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Смайлики</span>
-                    <svg class="price-list__option--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                   </td>
                 </tr>
                 <tr>
                   <td class="price-list__option price-list__option--mobile-hidden">Комментарии</td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Комментарии</span>
-                    <svg class="price-list__option--no" width="27" height="26"><use xlink:href="sprite.svg#icon-no"></use></svg>
+                    <svg class="price-list__icon price-list__icon--no" width="27" height="26"><use xlink:href="sprite.svg#icon-no"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Комментарии</span>
-                    <svg class="price-list__option--no" width="27" height="26"><use xlink:href="sprite.svg#icon-no"></use></svg>
+                    <svg class="price-list__icon price-list__icon--no" width="27" height="26"><use xlink:href="sprite.svg#icon-no"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Комментарии</span>
-                    <svg class="price-list__option--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                   </td>
                 </tr>
               </tbody>
@@ -220,11 +218,11 @@
           <div class="contacts__wrapper">
             <div class="contacts__container">
               <p class="contacts__title">Звоните:</p>
-              <p class="contacts__detail"><a class="contacts__detail" href="tel:+78125556666">+7 (812) 555 66 66</a></p>
+              <p class="contacts__detail"><a class="contacts__detail contacts__detail--phone" href="tel:+78125556666">+7 (812) 555 66 66</a></p>
             </div>
             <div class="contacts__container">
               <p class="contacts__title">Пишите:</p>
-              <p class="contacts__detail"><a class="contacts__detail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
+              <p class="contacts__detail"><a class="contacts__detail contacts__detail--mail" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
             </div>
             <div class="contacts__container">
               <p class="contacts__title">Приезжайте в гости:</p>
@@ -233,16 +231,16 @@
           </div>
         </div>
         <div class="contacts__map">
-          <iframe class="contacts__map--iframe" src="https://yandex.ru/map-widget/v1/-/CGTbf65t" width="320" height="230" frameborder="0" allowfullscreen="true"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CGTbf65t" width="320" height="230"></iframe>
         </div>
       </section>
     </main>
 
     <footer class="page-footer page-footer--index">
       <div class="container page-footer__container">
-        <a class="logo logo__footer">
-          <svg class="logo__footer-image logo__footer-image--mobile" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-mobilefooter"></use></svg>
-          <svg class="logo__footer-image logo__footer-image--desktop" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-desktopfooter"></use></svg>
+        <a class="logo logo__footer" href="#">
+          <svg class="logo__footer-image logo__footer-image--mobile" width="147" height="40"><use xlink:href="sprite.svg#logo-mobilefooter"></use></svg>
+          <svg class="logo__footer-image logo__footer-image--desktop" width="147" height="40"><use xlink:href="sprite.svg#logo-desktopfooter"></use></svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -260,11 +258,13 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__logo" width="27" height="34" alt="HTML Academy"><use xlink:href="sprite.svg#logo-htmlacademy"></use></svg>
+            <svg class="copyright__logo" width="27" height="34"><use xlink:href="sprite.svg#logo-htmlacademy"></use></svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>
     </footer>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); </script>
   </body>
 </html>

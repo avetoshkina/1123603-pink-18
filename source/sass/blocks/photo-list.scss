@@ -3,7 +3,7 @@
   flex-direction: column;
 
   @include list-reset;
-  margin-bottom: 29px;
+  margin-bottom: 23px;
 }
 
 .photo-list__item {
@@ -47,7 +47,11 @@
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    margin-bottom: 54px;
+    margin-bottom: 43px;
+  }
+
+  .photo-list__item {
+    margin-bottom: 19px;
   }
 
   .photo-list__item--view-of-day {
@@ -61,7 +65,7 @@
 
 @media (min-width: $desktop-width) {
   .photo-list {
-    margin-bottom: 10px;
+    margin-bottom: 7px;
   }
 
   .photo-list__item {

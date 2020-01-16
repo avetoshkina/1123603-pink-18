@@ -1,9 +1,8 @@
 .page-header {
-  position: absolute;
   display: flex;
   flex-direction: column;
   width: 100%;
-  background-color: $main-light-heading;
+  background-color: $main-color;
 }
 
 .page-header__logo-wrap {
@@ -24,6 +23,7 @@
   .page-header__logo-wrap {
     width: $tablet-width;
     min-height: 109px;
+    padding-bottom: 19px;
   }
 }
 
@@ -43,10 +43,9 @@
   }
 
   .page-header__logo-wrap {
-    align-items: unset;
     width: 147px;
     padding: 0;
-    padding-top: 27px;
+    padding-bottom: 16px;
     background-color: transparent;
     box-shadow: none;
   }

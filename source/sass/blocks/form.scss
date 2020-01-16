@@ -1,7 +1,11 @@
+.form {
+  margin-bottom: 15px;
+}
+
 .form__heading {
   margin: auto;
-  margin-top: 50px;
-  margin-bottom: 49px;
+  padding-top: 45px;
+  margin-bottom: 33px;
 
   @include font-regular;
 
@@ -12,10 +16,13 @@
 
 .form__note {
   display: block;
-  width: 181px;
 
   @include font-regular;
   text-transform: uppercase;
+
+  &--hidden {
+    display: none;
+  }
 }
 
 .form__note sup {
@@ -24,15 +31,8 @@
 
 .form__btn {
   display: block;
-  width: 280px;
   min-height: 63px;
-  margin-top: 52px;
-  margin-bottom: 46px;
-  padding-top: 12px;
-  padding-bottom: 14px;
-  line-height: 30px;
-  background-color: $green;
-  border-radius: 5px;
+  margin-bottom: 36px;
 }
 
 @media (min-width: $tablet-width) {
@@ -42,6 +42,8 @@
 
   .form__heading {
     width: 490px;
+    margin-bottom: 70px;
+    padding-top: 94px;
     font-size: 18px;
 
     &--mobile-hide {
@@ -52,20 +54,31 @@
   .form__btn {
     width: 300px;
   }
+
+  .form__note {
+    padding-bottom: 34px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .form {
-    margin-bottom: 30px;
+    margin: 0;
   }
 
   .form__heading {
     width: 756px;
-    margin-top: 91px;
-    margin-bottom: 89px;
+    margin-bottom: 83px;
   }
 
   .form__btn {
     margin: 0;
+  }
+
+  .form__note {
+    padding: 0;
+
+    &--hidden {
+      display: inline;
+    }
   }
 }

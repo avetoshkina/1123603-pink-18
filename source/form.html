@@ -10,22 +10,22 @@
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrap">
-          <a href="index.html" class="logo">
-            <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-mobile"></use></svg>
-            <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-tablet"></use></svg>
-            <svg class="logo logo__logo-image logo__logo-image--desktop" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-desktop"></use></svg>
+          <a class="logo" href="index.html">
+            <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22"><use xlink:href="sprite.svg#logo-mobile"></use></svg>
+            <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40"><use xlink:href="sprite.svg#logo-tablet"></use></svg>
+            <svg class="logo logo__logo-image logo__logo-image--desktop" width="147" height="40"><use xlink:href="sprite.svg#logo-desktop"></use></svg>
           </a>
         </div>
-        <nav class="main-nav main-nav--closed">
+        <nav class="main-nav main-nav--opened main-nav--no-js">
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
+            <li class="site-list__item">
               <a href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
               <a href="photo.html">Фотографии</a>
             </li>
-            <li class="site-list__item">
+            <li class="site-list__item site-list__item--active">
               <a>Конкурс</a>
             </li>
             <li class="site-list__item">
@@ -65,48 +65,48 @@
           </div>
           <div class="fieldset-wrapper fieldset-wrapper--achievements">
             <fieldset class="form__fieldset contest-fieldset contest-fieldset--achievements">
-              <legend class="contest-fieldset__title">Ваши безбашенные<br class="form__br"> достижения в путешествии</legend>
+              <h3 class="contest-fieldset__title contest-fieldset__title--achievements">Ваши безбашенные<br class="form__br"> достижения в путешествии</h3>
               <ul class="contest-fieldset__list contest-fieldset__list--achievements">
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="selfie" name="selfie" checked>
                   <label for="selfie">Сделал селфи с акулой</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="sunburned" name="sunburned" checked>
                   <label for="sunburned">Обгорел на пляже</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="chuck-norris" name="chuck-norris">
                   <label for="chuck-norris">Видел Чака Норриса</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="souvenir" name="souvenir">
                   <label for="souvenir">Накупил сувениров</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
                   <input class="contest-fieldset__checkbox" type="checkbox" id="tower" name="tower" checked>
                   <label for="tower">Удержал башню</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--achievements">
-                  <input class="contest-fieldset__checkbox" type="checkbox" id="hotel" name="hotel" checked>
+                  <input class="contest-fieldset__checkbox" type="checkbox" id="hotel" name="hotel">
                   <label for="hotel">Разгромил отель</label>
-                  <svg class="contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                  <svg class="contest-fieldset__checkbox contest-fieldset__checkbox--checked-icon" width="22" height="16"><use xlink:href="sprite.svg#icon-yes"></use></svg>
                 </li>
               </ul>
             </fieldset>
           </div>
           <div class="contest-form__input-container contest-form__input-container--contacts">
             <fieldset class="form__fieldset contest-fieldset contest-fieldset--contacts">
-              <legend class="contest-fieldset__title contest-fieldset__title--contacts">Контактная информация</legend>
+              <h3 class="contest-fieldset__title contest-fieldset__title--contacts">Контактная информация</h3>
               <div class="contest-fieldset__inner-container">
                 <div class="contest-form__item contest-form__item--contacts contest-form__item--phone">
                   <label class="contest-form__input-label contest-form__input-label--contacts" for="phone-field">Номер телефона</label>
-                  <input class="contest-form__input contest-form__input--contacts" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста">
+                  <input class="contest-form__input contest-form__input--contacts" type="tel" name="phone" id="phone-field" placeholder="Номер, пожалуйста" pattern="[8][0-9]{3}[0-9]{3}[0-9]{2}[0-9]{2}">
                 </div>
                 <div class="contest-form__item contest-form__item--contacts contest-form__item--email">
                   <label class="contest-form__input-label contest-form__input-label--contacts" for="email-field">Адрес почты</label>
@@ -117,18 +117,18 @@
           </div>
           <div class="fieldset-wrapper fieldset-wrapper--travel-app">
             <fieldset class="form__fieldset contest-fieldset contest-fieldset--travel-app">
-              <legend class="contest-fieldset__title">С каким приложением путешествовали?</legend>
+              <h3 class="contest-fieldset__title contest-fieldset__title--travel-app">С каким приложением путешествовали?</h3>
               <ul class="contest-fieldset__list contest-fieldset__list--travel-app">
                 <li class="contest-fieldset__item contest-fieldset__item--travel-app">
                   <input class="contest-fieldset__radio" type="radio" id="ios" name="application" value="pink-ios" checked>
                   <label for="ios">Pink для iOS</label>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--travel-app">
-                  <input class="contest-fieldset__radio" type="radio" id="android" name="application" value="pink-android" checked>
+                  <input class="contest-fieldset__radio" type="radio" id="android" name="application" value="pink-android">
                   <label for="android">Pink на Android</label>
                 </li>
                 <li class="contest-fieldset__item contest-fieldset__item--travel-app">
-                  <input class="contest-fieldset__radio" type="radio" id="windows" name="application" value="windows-phone" checked>
+                  <input class="contest-fieldset__radio" type="radio" id="windows" name="application" value="windows-phone">
                   <label for="windows">Windows Phone</label>
                 </li>
               </ul>
@@ -136,7 +136,7 @@
           </div>
           <div class="contest-form__input-container contest-form__input-container--textarea">
             <fieldset class="form__fieldset contest-fieldset contest-fieldset--textarea">
-              <legend class="contest-fieldset__title contest-fieldset__title--textarea">Опишите свои эмоции</legend>
+              <h3 class="contest-fieldset__title contest-fieldset__title--textarea">Опишите свои эмоции</h3>
               <div class="contest-fieldset__inner-container">
                 <label class="visually-hidden" for="emotions-field">Опишите свои эмоции</label>
                 <textarea class="contest-form__input contest-form__input--textarea" name="emotions-description" id="emotions-field" rows="6" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
@@ -144,9 +144,9 @@
             </fieldset>
           </div>
           <div class="contest-form__item contest-form__item--bottom">
-            <button class="form__btn form__btn--submit button" type="submit">Отправить форму</button>
+            <button class="button button--green form__btn form__btn--submit" type="submit"><span class="button__text">Отправить форму</span></button>
             <small class="form__note">
-                <sup>*</sup> — обязательные поля
+                <sup>*</sup> — обязательные <span class="form__note form__note--hidden">для заполнения</span> поля
               </small>
           </div>
         </form>
@@ -156,9 +156,9 @@
 
     <footer class="page-footer">
       <div class="container page-footer__container">
-        <a href="index.html" class="logo logo__footer">
-          <svg class="logo__footer-image logo__footer-image--mobile" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-mobilefooter"></use></svg>
-          <svg class="logo__footer-image logo__footer-image--desktop" width="147" height="40" alt="Приложение Pink"><use xlink:href="sprite.svg#logo-desktopfooter"></use></svg>
+        <a class="logo logo__footer" href="index.html">
+          <svg class="logo__footer-image logo__footer-image--mobile" width="147" height="40"><use xlink:href="sprite.svg#logo-mobilefooter"></use></svg>
+          <svg class="logo__footer-image logo__footer-image--desktop" width="147" height="40"><use xlink:href="sprite.svg#logo-desktopfooter"></use></svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -176,11 +176,27 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__logo" width="27" height="34" alt="HTML Academy"><use xlink:href="sprite.svg#logo-htmlacademy"></use></svg>
+            <svg class="copyright__logo" width="27" height="34"><use xlink:href="sprite.svg#logo-htmlacademy"></use></svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
       </div>
     </footer>
+    <section class="modal modal--error">
+      <h2 class="modal__heading">Что-то пошло не так!</h2>
+      <p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <div class="modal__btn-background">
+        <button class="button button--green modal__btn modal__btn--ok" type="submit"><span class="button__text">Ок</span></button>
+      </div>
+    </section>
+    <section class="modal modal--success">
+      <h2 class="modal__heading">Ваша заявка отправлена</h2>
+      <p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и<br> оповестим вас.</p>
+      <div class="modal__btn-background">
+        <button class="button button--green modal__btn modal__btn--close" type="submit"><span class="button__text">Закрыть окно</span></button>
+      </div>
+    </section>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody(); </script>
   </body>
 </html>

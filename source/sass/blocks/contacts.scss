@@ -1,5 +1,5 @@
 .contacts {
-  padding-top: 50px;
+  padding-top: 43px;
 }
 
 .contacts__wrapper {
@@ -9,13 +9,14 @@
 
 .contacts__heading {
   margin: 0 auto;
-  margin-bottom: 44px;
+  margin-bottom: 39px;
 
   @include font-light;
 }
 
 .contacts__title {
   margin: 0;
+  margin-bottom: 4px;
 
   @include font-bold;
   color: $main-color;
@@ -29,8 +30,25 @@
   text-decoration: none;
 }
 
+.contacts__detail--mail {
+  &:hover {
+    color: $main-color;
+    text-decoration: underline;
+  }
+
+  &:active {
+    opacity: 0.3;
+    text-decoration: none;
+  }
+}
+
 .contacts__container {
-  margin-bottom: 28px;
+  margin-bottom: 24px;
+
+  &:last-child {
+    padding-top: 6px;
+    margin-bottom: 0;
+  }
 }
 
 .contacts__map {
@@ -52,7 +70,7 @@
 .contacts__map::before {
   content: "";
   position: absolute;
-  top: 60px;
+  top: 15px;
   left: 50%;
   width: 600px;
   height: 123px;
@@ -63,22 +81,39 @@
   transform: translate(-50%, -50%);
 }
 
+.contacts__map iframe {
+  border: 0;
+}
+
 @media (min-width: $tablet-width) {
+  .contacts {
+    padding-top: 48px;
+  }
+
   .contacts__wrapper {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-left: 43px;
-    padding-right: 25px;
+    padding-left: 47px;
+    padding-right: 30px;
   }
 
   .contacts__heading {
     width: 370px;
+    margin-bottom: 49px;
     font-size: 40px;
   }
 
-  .contacts__container:last-child {
-    flex-grow: 1;
+  .contacts__title {
+    margin-bottom: 6px;
+  }
+
+  .contacts__container {
+    margin-bottom: 46px;
+
+    &:last-child {
+      flex-grow: 1;
+    }
   }
 
   .contacts__map {
@@ -87,6 +122,7 @@
     background-image: url("../img/bg-map-tablet@1x.jpg");
 
     &::before {
+      top: 39px;
       width: 700px;
     }
 
@@ -95,7 +131,7 @@
     }
   }
 
-  .contacts__map--iframe {
+  .contacts__map iframe {
     width: 700px;
     height: 404px;
   }
@@ -125,6 +161,8 @@
     &:last-child {
       flex-grow: 0;
       order: -1;
+      padding: 0;
+      padding-left: 17px;
     }
   }
 
@@ -134,11 +172,12 @@
 
   .contacts__map {
     width: 1200px;
-    height: 525px;
+    height: 507px;
     background-image: url("../img/bg-map-desktop@1x.jpg");
 
 
     &::before {
+      top: 61px;
       width: 1200px;
       background-size: 1300px 123px;
     }
@@ -148,8 +187,8 @@
     }
   }
 
-  .contacts__map--iframe {
+  .contacts__map iframe {
     width: 1200px;
-    height: 525px;
+    height: 507px;
   }
 }
