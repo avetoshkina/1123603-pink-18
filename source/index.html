@@ -4,19 +4,22 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrap">
           <a class="logo" href="#">
-            <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22"><use xlink:href="sprite.svg#logo-mobile"></use></svg>
-            <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40"><use xlink:href="sprite.svg#logo-tablet"></use></svg>
-            <svg class="logo logo__logo-image logo__logo-image--desktop" width="147" height="40"><use xlink:href="sprite.svg#logo-desktop"></use></svg>
+            <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22"><use xlink:href="#logo-pink-white-mobile"></use></svg>
+            <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
+            <svg class="logo logo__logo-image logo__logo-image--desktop" width="147" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
           </a>
         </div>
-        <nav class="main-nav main-nav--opened main-nav--no-js">
+        <nav class="main-nav main-nav--opened main-nav--no-js"> <!-- .main-nav--closed класс для закрытого меню -->
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
           <ul class="main-nav__list site-list">
             <li class="site-list__item site-list__item--active">
@@ -101,7 +104,7 @@
           <div class="research__wrapper container">
             <div class="timer-icon">
               <div class="timer-icon__layer1">
-                <svg width="298" height="345"><use xlink:href="sprite.svg#timer"></use></svg>
+                <svg width="298" height="345"><use xlink:href="#icon-timer"></use></svg>
                 <div class="timer-icon__layer2">
                   <p>24</p>
                 </div>
@@ -161,45 +164,45 @@
                   <td class="price-list__option price-list__option--mobile-hidden">Розовый фильтр</td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Розовый фильтр</span>
-                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="#icon-yes"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Розовый фильтр</span>
-                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="#icon-yes"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Розовый фильтр</span>
-                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="#icon-yes"></use></svg>
                   </td>
                 </tr>
                 <tr>
                   <td class="price-list__option price-list__option--mobile-hidden">Смайлики</td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Смайлики</span>
-                    <svg class="price-list__icon price-list__icon--no" width="27" height="26"><use xlink:href="sprite.svg#icon-no"></use></svg>
+                    <svg class="price-list__icon price-list__icon--no" width="27" height="26"><use xlink:href="#icon-no"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Смайлики</span>
-                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="#icon-yes"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Смайлики</span>
-                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="#icon-yes"></use></svg>
                   </td>
                 </tr>
                 <tr>
                   <td class="price-list__option price-list__option--mobile-hidden">Комментарии</td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Комментарии</span>
-                    <svg class="price-list__icon price-list__icon--no" width="27" height="26"><use xlink:href="sprite.svg#icon-no"></use></svg>
+                    <svg class="price-list__icon price-list__icon--no" width="27" height="26"><use xlink:href="#icon-no"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Комментарии</span>
-                    <svg class="price-list__icon price-list__icon--no" width="27" height="26"><use xlink:href="sprite.svg#icon-no"></use></svg>
+                    <svg class="price-list__icon price-list__icon--no" width="27" height="26"><use xlink:href="#icon-no"></use></svg>
                   </td>
                   <td class="price-list__option">
                     <span class="price-list__hidden-content">Комментарии</span>
-                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="sprite.svg#icon-yes"></use></svg>
+                    <svg class="price-list__icon price-list__icon--yes" width="31" height="21"><use xlink:href="#icon-yes"></use></svg>
                   </td>
                 </tr>
               </tbody>
@@ -239,8 +242,8 @@
     <footer class="page-footer page-footer--index">
       <div class="container page-footer__container">
         <a class="logo logo__footer" href="#">
-          <svg class="logo__footer-image logo__footer-image--mobile" width="147" height="40"><use xlink:href="sprite.svg#logo-mobilefooter"></use></svg>
-          <svg class="logo__footer-image logo__footer-image--desktop" width="147" height="40"><use xlink:href="sprite.svg#logo-desktopfooter"></use></svg>
+          <svg class="logo__footer-image logo__footer-image--mobile" width="147" height="40"><use xlink:href="#logo-pink-blue-mobile"></use></svg>
+          <svg class="logo__footer-image logo__footer-image--desktop" width="147" height="40"><use xlink:href="#logo-pink-blue-desktop"></use></svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -258,7 +261,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__logo" width="27" height="34"><use xlink:href="sprite.svg#logo-htmlacademy"></use></svg>
+            <svg class="copyright__logo" width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>

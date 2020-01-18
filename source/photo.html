@@ -4,16 +4,19 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
     <header class="page-header">
       <div class="page-header__wrapper">
         <div class="page-header__logo-wrap">
           <a class="logo" href="index.html">
-            <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22"><use xlink:href="sprite.svg#logo-mobile"></use></svg>
-            <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40"><use xlink:href="sprite.svg#logo-tablet"></use></svg>
-            <svg class="logo logo__logo-image logo__logo-image--desktop" width="147" height="40"><use xlink:href="sprite.svg#logo-desktop"></use></svg>
+            <svg class="logo__logo-image logo__logo-image--mobile" width="75" height="22"><use xlink:href="#logo-pink-white-mobile"></use></svg>
+            <svg class="logo__logo-image logo__logo-image--tablet" width="147" height="40"><use xlink:href="#logo-pink-white-tablet"></use></svg>
+            <svg class="logo logo__logo-image logo__logo-image--desktop" width="147" height="40"><use xlink:href="#logo-pink-white-desktop"></use></svg>
           </a>
         </div>
         <nav class="main-nav main-nav--opened main-nav--no-js">
@@ -207,7 +210,7 @@
               <ul class="photo-filter__list filter-icons">
                 <li class="filter-icons__item filter-icons__item--crop">
                   <button class="photo-filter__btn photo-filter__btn--edit button" type="button">
-                    <svg class="filter-icons__img filter-icons__img--crop filter-icons__img--active" width="44" height="44"><use xlink:href="sprite.svg#icon-crop"></use></svg>
+                    <svg class="filter-icons__img filter-icons__img--crop filter-icons__img--active" width="44" height="44"><use xlink:href="#icon-editor-crop"></use></svg>
                     <span class="visually-hidden">Обрезать фото</span>
                   </button>
                   <div class="photo-filter__scale photo-filter__scale--crop scale">
@@ -217,7 +220,7 @@
                 </li>
                 <li class="filter-icons__item filter-icons__item--fill">
                   <button class="photo-filter__btn photo-filter__btn--edit button" type="button">
-                    <svg class="filter-icons__img filter-icons__img--fill" width="48" height="43"><use xlink:href="sprite.svg#icon-fill"></use></svg>
+                    <svg class="filter-icons__img filter-icons__img--fill" width="48" height="43"><use xlink:href="#icon-editor-fill"></use></svg>
                     <span class="visually-hidden">Залить фото цветом</span>
                   </button>
                   <div class="photo-filter__scale photo-filter__scale--fill scale">
@@ -227,7 +230,7 @@
                 </li>
                 <li class="filter-icons__item filter-icons__item--contrast">
                   <button class="photo-filter__btn photo-filter__btn--edit button" type="button">
-                    <svg class="filter-icons__img filter-icons__img--contrast" width="32" height="32"><use xlink:href="sprite.svg#icon-contrast"></use></svg>
+                    <svg class="filter-icons__img filter-icons__img--contrast" width="32" height="32"><use xlink:href="#icon-editor-contrast"></use></svg>
                     <span class="visually-hidden">Отрегулировать контрастность</span>
                   </button>
                   <div class="photo-filter__scale photo-filter__scale--contrast scale">
@@ -250,8 +253,8 @@
     <footer class="page-footer">
       <div class="container page-footer__container">
         <a class="logo logo__footer" href="index.html">
-          <svg class="logo__footer-image logo__footer-image--mobile" width="147" height="40"><use xlink:href="sprite.svg#logo-mobilefooter"></use></svg>
-          <svg class="logo__footer-image logo__footer-image--desktop" width="147" height="40"><use xlink:href="sprite.svg#logo-desktopfooter"></use></svg>
+          <svg class="logo__footer-image logo__footer-image--mobile" width="147" height="40"><use xlink:href="#logo-pink-blue-mobile"></use></svg>
+          <svg class="logo__footer-image logo__footer-image--desktop" width="147" height="40"><use xlink:href="#logo-pink-blue-desktop"></use></svg>
         </a>
         <div class="page-footer__social social">
           <ul class="social__list">
@@ -269,7 +272,7 @@
         <div class="page-footer__copyright copyright">
           <b class="copyright__text">Разработано</b>
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-            <svg class="copyright__logo" width="27" height="34"><use xlink:href="sprite.svg#logo-htmlacademy"></use></svg>
+            <svg class="copyright__logo" width="27" height="34"><use xlink:href="#logo-htmlacademy"></use></svg>
             <span class="visually-hidden">HTML Academy</span>
           </a>
         </div>
