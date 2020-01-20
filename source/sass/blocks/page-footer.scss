@@ -1,6 +1,6 @@
 .page-footer {
   padding-top: 40px;
-  padding-bottom: 50px;
+  padding-bottom: 36px;
 }
 
 .page-footer--index {
@@ -14,7 +14,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 36px;
+    padding-top: 30px;
 
     &--index {
       display: block;
