@@ -31,7 +31,7 @@
 
 .contest-fieldset__list {
   @include list-reset;
-  padding-left: 88px;
+  padding-left: 72px;
 
   @include font-regular;
   text-align: left;
@@ -52,7 +52,7 @@
 
 .contest-fieldset__checkbox,
 .contest-fieldset__radio {
-  display: none;
+  opacity: 0;
 }
 
 .contest-fieldset__item,
@@ -75,8 +75,9 @@
   display: none;
   position: absolute;
   top: 7px;
-  left: -60px;
+  left: -43px;
   fill: $pink;
+  opacity: 1;
 }
 
 .contest-fieldset__checkbox:checked ~ .contest-fieldset__checkbox--checked-icon {
@@ -113,10 +114,10 @@
   border-color: $main-color;
 }
 
-.contest-fieldset__checkbox:active + label::before,
-.contest-fieldset__checkbox:checked:active + label::before,
-.contest-fieldset__radio:active + label::before,
-.contest-fieldset__radio:checked:active + label::before {
+.contest-fieldset__checkbox:focus + label::before,
+.contest-fieldset__checkbox:checked:focus + label::before,
+.contest-fieldset__radio:focus + label::before,
+.contest-fieldset__radio:checked:focus + label::before {
   border-color: $pink;
 }
 
@@ -143,7 +144,7 @@
   }
 
   .contest-fieldset__list {
-    padding-left: 116px;
+    padding-left: 99px;
   }
 
   .contest-fieldset__title {
@@ -163,7 +164,6 @@
     &--contacts {
       display: inline;
       margin-left: -132px;
-      margin-bottom: 37px;
     }
 
     &--achievements {
@@ -196,7 +196,7 @@
   }
 
   .contest-fieldset__checkbox--checked-icon {
-    left: -50px;
+    left: -32px;
   }
 }
 
@@ -224,7 +224,7 @@
   }
 
   .contest-fieldset__list {
-    padding-left: 130px;
+    padding-left: 110px;
     line-height: unset;
   }
 
@@ -259,6 +259,7 @@
 
   .contest-fieldset__inner-container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 820px;
   }
@@ -269,7 +270,7 @@
     flex-wrap: wrap;
     align-content: space-between;
     height: 168px;
-    padding-left: 118px;
+    padding-left: 98px;
     padding-right: 55px;
   }
 
@@ -288,7 +289,7 @@
 
     .contest-fieldset__checkbox--checked-icon {
       top: 10%;
-      left: -51px;
+      left: -32px;
     }
   }
 }

@@ -20,6 +20,10 @@
   }
 }
 
+.copyright__link {
+  outline-color: red;
+}
+
 .copyright__text {
   @include font-regular;
   line-height: 18px;

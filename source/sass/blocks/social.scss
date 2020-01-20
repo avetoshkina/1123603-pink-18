@@ -1,13 +1,15 @@
 .social__list {
   @include list-reset;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   width: 173px;
   margin: auto;
   margin-bottom: 45px;
 }
 
-.social__background {
+.social__item {
+  display: block;
   width: 46px;
   height: 46px;
   background-color: none;
@@ -24,13 +26,13 @@
   }
 }
 
-.social__background--twitter,
-.social__background--facebook,
-.social__background--youtube {
+.social__item--twitter,
+.social__item--facebook,
+.social__item--youtube {
   position: relative;
 }
 
-.social__background--twitter::before {
+.social__item--twitter::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -42,7 +44,7 @@
   transform: translate(-50%, -50%);
 }
 
-.social__background--facebook::before {
+.social__item--facebook::before {
   content: "";
   position: absolute;
   top: 50%;
@@ -54,7 +56,7 @@
   transform: translate(-50%, -50%);
 }
 
-.social__background--youtube::before {
+.social__item--youtube::before {
   content: "";
   position: absolute;
   top: 50%;
